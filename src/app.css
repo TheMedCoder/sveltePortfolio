@@ -1,2 +1,42 @@
 @import "tailwindcss";
 
+/* 1. Update the Keyframe to include the centering translation */
+/* If we don't add translate here, the rotation will override the centering */
+@keyframes border-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+
+@utility animate-border-spin {
+  animation: border-spin 4s linear infinite;
+}
+
+.card-wrapper {
+  @apply relative overflow-hidden rounded-2xl bg-slate-800;
+}
+
+.card-wrapper::before {
+  content: '';
+  background: conic-gradient(
+    rgba(244, 114, 182, 0.4) 0deg,
+    rgba(192, 132, 252, 0.4) 0deg,
+    transparent 80deg
+  );
+  
+  /* 2. Positioning: Pin to the absolute center */
+  @apply absolute left-1/2 top-1/2 animate-border-spin;
+
+  /* 3. Sizing: Force a perfect square based on the width */
+  /* We use a large percentage (like 200% or 250%) to ensure it covers the card corners */
+  width: 250%;
+  aspect-ratio: 1 / 1; 
+}
+
+/* Inner card (Unchanged) */
+.card-content {
+  @apply absolute w-[calc(100%-2px)] h-[calc(100%-2px)] top-px left-px bg-gray-900 rounded-2xl p-6;
+}

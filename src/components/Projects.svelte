@@ -42,12 +42,18 @@
       name: "A Google-Forms Like Web Application",
       description:
         "A Google-Forms-like web application for creating, distributing, and analyzing surveys, built with Svelte, C#, and Tailwind CSS.",
-      technologies: ["C#", ".NET Framework", "SQlite", "Svelte", "Tailwind CSS"],
+      technologies: [
+        "C#",
+        ".NET Framework",
+        "SQlite",
+        "Svelte",
+        "Tailwind CSS",
+      ],
     },
   ];
 </script>
 
-<div class="w-full px-8 lg:px-56 pb-6" id="projects">
+<div class="w-full px-6 md:px-12 lg:px-24 pb-6" id="projects">
   <h1 class="text-center text-6xl font-bold text-white mb-12">Projects</h1>
 
   <div class="flex flex-col items-center mb-12 animate-pulse">
@@ -56,12 +62,10 @@
     <div class="w-3 h-3 bg-sky-400 rounded-full"></div>
   </div>
 
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
-  >
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
     {#each projects as project}
       <div
-        class="bg-slate-800 rounded-lg border border-slate-700 p-6 hover:border-sky-500 transition-all" 
+        class="bg-slate-800 rounded-lg border border-slate-700 p-6 hover:border-sky-500 transition-all"
         data-aos="fade-up"
       >
         <h3 class="text-2xl font-semibold text-white mb-4">{project.name}</h3>

@@ -6,7 +6,7 @@
   }
 </script>
 
-<nav class="w-full px-8 lg:px-42 pt-10">
+<nav class="w-full px-6 md:px-12 lg:px-24 pt-10">
   <div class="flex items-center justify-between">
     <!-- name -->
     <div class="shrink-0">
