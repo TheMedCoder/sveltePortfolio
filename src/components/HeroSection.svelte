@@ -59,9 +59,9 @@
         </h1>
         <div class="flex items-center gap-4 mb-8 relative">
           <div
-            class="hidden lg:block h-1 bg-sky-500 absolute left-0 -translate-x-full w-screen"
+            class="hidden lg:block h-1 bg-sky-500 absolute left-0 -translate-x-full w-screen drop-shadow-blue-400 drop-shadow-sm"
           ></div>
-          <div data-aos="fade-right" class="h-1 w-20 bg-sky-500 relative"></div>
+          <div data-aos="fade-right" class="h-1 w-20 bg-sky-500 relative drop-shadow-blue-400 drop-shadow-sm"></div>
           <p class="text-2xl md:text-3xl text-gray-300">I'm Sajjad</p>
         </div>
         <h2 bind:this={titleEl} class="text-4xl md:text-5xl font-bold mb-8">Software Developer</h2>
@@ -73,7 +73,7 @@
           onclick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           class="px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded transition-colors cursor-pointer"
         >
-          Need a hand?
+          Get in Touch
         </button>
         <button 
           onclick={() => showCVModal = true}
@@ -89,25 +89,25 @@
       <div class="relative overflow-visible">
         <div
           in:fade={{ duration: 500 }}
-          class="absolute top-10 -left-15 w-32 h-32 border-2 border-sky-500/80 transform rotate-12 animate-spin overflow-hidden"
+          class="absolute top-10 -left-15 w-32 h-32 border-2 border-sky-500/80 transform rotate-12 animate-spin overflow-hidden drop-shadow-blue-400 drop-shadow-md"
           style="animation-duration: 8s;"
         ></div>
         <div
           in:fade={{ duration: 500 }}
-          class="absolute bottom-25 -right-15 w-32 h-32 border-2 border-sky-500/80 transform -rotate-12 animate-bounce overflow-hidden"
+          class="absolute bottom-25 -right-15 w-32 h-32 border-2 border-sky-500/80 transform -rotate-12 animate-bounce overflow-hidden drop-shadow-blue-400 drop-shadow-md"
           style="animation-duration: 3.5s;"
         ></div>
 
         <!-- circle background -->
         <div
-          class="absolute -inset-7 w-80 h-80 md:w-105 md:h-105 rounded-full border-8 border-sky-500/80 shadow-2xl z-0"
+          class="absolute -inset-7 w-80 h-80 md:w-105 md:h-105 rounded-full border-6 border-sky-500/80 drop-shadow-blue-400 drop-shadow-md z-0" 
         ></div>
 
         <!-- image in front -->
         <img
           src="./Sajjad_Ahmed.png"
           alt="Sajjad"
-          class="relative w-80 h-auto md:w-96 md:h-auto object-cover z-10"
+          class="relative w-80 h-auto md:w-96 md:h-auto object-cover z-10 drop-shadow-xl/25"
         />
       </div>
     </div>
@@ -120,7 +120,7 @@
     >
       {#each skills as skill}
         <span
-          class="tracking-wide hover:text-sky-300 transition-colors cursor-default"
+          class="tracking-wide hover:text-sky-300 transition-colors cursor-default hover:scale-120"
           title={skill.name}
         >
           <Icon icon={skill.icon} width="32" height="32" />

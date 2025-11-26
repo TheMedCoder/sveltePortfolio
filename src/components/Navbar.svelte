@@ -10,7 +10,7 @@
   <div class="flex items-center justify-between">
     <!-- name -->
     <div class="shrink-0">
-      <h1 class="text-2xl font-bold text-gray-200 font-gelasio">Sajjad Ahmed</h1>
+      <h1 class="text-2xl font-bold text-gray-200 font-gelasio">TheMedCoder</h1>
     </div>
     
     <!-- Desktop -->
