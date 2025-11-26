@@ -77,6 +77,7 @@
 <svelte:window bind:innerWidth={windowWidth} />
 
 <main class="mb-16 xl:mb-0 bg-gray-950 text-white mt-4">
+
   <div
     class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-12 lg:gap-24 px-6 md:px-12 lg:px-24 md:pt-20"
   >
@@ -106,18 +107,23 @@
 
       <!-- Buttons -->
       <div class="  flex flex-wrap gap-4 mb-8 md:mb-0">
-        <button
-          onclick={() =>
+        <button 
+        onclick={() =>
             document
               .getElementById("contact")
               ?.scrollIntoView({ behavior: "smooth" })}
-          class=" px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded transition-colors cursor-pointer drop-shadow-sm drop-shadow-blue-400"
-        >
-          Get in Touch
+        class="group relative overflow-hidden rounded p-[2px] focus:outline-none hover:scale-102 active:scale-98 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+          <span class="absolute inset-[-1000%] animate-[spin_1.5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2E8F0_0%,#4FA3E0_50%,#E2E8F0_100%)]"></span>
+          <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded bg-slate-950 px-8 py-3 font-bold text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900">
+           Get in Touch
+          </span>
         </button>
+        
+          <!-- class=" px-8 py-4 bg-sky-500 hover:bg-sky-600 text-white font-semibold rounded transition-colors cursor-pointer drop-shadow-sm drop-shadow-blue-400" -->
+        
         <button
           onclick={() => (showCVModal = true)}
-          class="px-8 py-4 border-2 border-sky-500 hover:bg-sky-500/10 text-white font-semibold rounded transition-colors cursor-pointer"
+          class=" px-8 py-4 border-2 border-sky-500 hover:bg-sky-500/10 text-white font-semibold rounded transition-colors cursor-pointer"
         >
           View CV
         </button>
