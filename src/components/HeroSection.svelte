@@ -195,7 +195,7 @@
   <!-- CV Modal Component -->
   <CVModal
     bind:show={showCVModal}
-    pdfPath="{basePath}Sajjad Ahmed Mohammed CV (1).pdf"
+    pdfPath="{basePath}SajjadAhmedCV.pdf"
   />
 </main>
 
