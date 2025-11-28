@@ -40,8 +40,8 @@
                         <div>
                             <a
                                 class="cursor-pointer font-serif text-base md:text-lg text-gray-200 hover:text-sky-500 transition-colors"
-                                href="mailto:sajad21lilo@gmail.com"
-                                >Sajad21lilo@gmail.com</a
+                                href="mailto:thesadjadahmed@gmail.com"
+                                >thesadjadahmed@gmail.com</a
                             >
                             <span class="block text-xs uppercase text-gray-400"
                                 >email</span
