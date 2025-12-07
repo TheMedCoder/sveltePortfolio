@@ -11,10 +11,10 @@
       technologies: ["Svelte", "Tailwind CSS", "JavaScript"],
     },
     {
-      name: "Battleship CLI Game",
+      name: "Web-based OCR Service",
       description:
-        "A command-line battleship game with AI opponent, grid-based gameplay, and turn-based combat mechanics.",
-      technologies: ["C#", ".NET", "Console"],
+      "A web-based OCR service for extracting text from images and PDFs, built with Svelte, Tailwind CSS, Laravel, PDF.js, and other tools.",
+      technologies: ["Svelte", "Tailwind CSS", "Laravel", "PDF.js", "Olama AI"],
     },
     {
       name: "Healthcare Patient Management System",
