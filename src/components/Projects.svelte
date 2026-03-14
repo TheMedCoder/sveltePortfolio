@@ -17,10 +17,10 @@
       technologies: ["Svelte", "Tailwind CSS", "Laravel", "PDF.js", "Olama AI"],
     },
     {
-      name: "Healthcare Patient Management System",
+      name: "Simple Weather App",
       description:
-        "A full-stack healthcare platform for managing patient appointments, medical tests, doctor schedules, patient history, and electronic health records.",
-      technologies: ["SvelteKit", "C#", ".NET", "PostgreSQL"],
+      "A simple weather application built with React and Axios that fetches and displays current weather data for a given city.",
+      technologies: ["React", "Axios", "JavaScript"],
     },
     {
       name: "Calculator App",
